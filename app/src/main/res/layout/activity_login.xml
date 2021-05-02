@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLogin"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_baseline_person_outline_24"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/inpput_username"
+            android:layout_gravity="center_horizontal"
+            android:background="#11000000"
+            android:hint="Username"
+            android:layout_marginTop="230dp"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="100dp"
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/input_password"
+            android:layout_gravity="center_horizontal"
+            android:background="#11000000"
+            android:hint="Password"
+            android:layout_marginTop="300dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="100dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#ffffff"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/button"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/cvLogin"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+
+</RelativeLayout>
